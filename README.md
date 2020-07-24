@@ -13,7 +13,7 @@
 - [Module 4](#-module-4)
 
 ---
-## About
+## 💌 About
 This repository is comprised of codes developed during the [Launchbase Bootcamp](https://rocketseat.com.br/launchbase) classes, a [Rocketseat](https://rocketseat.com.br/)'s educational product!
 
 ---
@@ -28,15 +28,15 @@ Starting with FrontEnd.
 This module works with challenges the student to build a dynamic website using HTML, CSS and Javscript technologies.
 You can access the codes through the folder Module 2.
 
-## 🔏 Module 3
+## 🚧 Module 3
 TBA.
 
-## 🔏 Module 2
+## 🚧 Module 2
 TBA.
 
 
 
 
 ---
-Developed by :octocat:[prodevengineer](https://github.com/prodevengineer) ✨
+Developed by :octocat:[prodevengineer](https://github.com/prodevengineer) ✨🚀✨
 
