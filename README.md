@@ -25,7 +25,7 @@ You can access the codes through the folder Module 1.
 
 ## 📂 Module 2
 Starting with FrontEnd.
-This module challenges the student to build a dynamic website using HTML, CSS and Javscript technologies.
+This module challenges the student to build a dynamic website using HTML, CSS and JavaScript technologies.
 You can access the codes through the folder Module 2.
 
 ## 🚧 Module 3
