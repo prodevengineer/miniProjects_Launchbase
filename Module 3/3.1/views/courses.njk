@@ -1,0 +1,74 @@
+{% extends "layout.njk" %}
+
+{% block head%}
+    <title>Courses | Rocketseat </title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+{% endblock %}
+
+
+{% block content %}
+
+    <div id="courses">
+        <h1>Courses</h1>
+    </div>
+
+    <section class="cards">
+        <div class="card" id="starter">
+            <div class="card_image-container">
+                <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/starter.svg" alt="Starter">
+            </div>
+            <div class="card_title">
+                <p><strong class="purple">Become a wanted programmer</strong> <br> in the market with our <br> free lessons</p>
+            </div>
+            <div class="card_info">
+                <p>5 modules</p>
+                <p class="card_price">FREE</p>
+            </div>
+        </div>
+
+        <div class="card" id="launchbase">
+            <div class="card_image-container">
+                <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/launchbase.svg" alt="Launchbase">
+            </div>
+            <div class="card_title">
+                <p><strong class="orange"> Master programming from scratch</strong> <br> and have access to the best <br> market opportunities </p>
+            </div>
+            <div class="card_info">
+                <p>14 modules</p>
+                <p class="card_price">CAD$220</p>
+            </div>
+        </div>
+
+        <div class="card" id="gostack">
+            <div class="card_image-container">
+                <img src="http://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/gostack.svg" alt="GoStack">
+            </div>
+            <div class="card_title">
+                <p> <strong class="green"> Immersive training</strong>  in the most<br> modern web and mobile <br> development technologies </p>
+            </div>
+            <div class="card_info">
+                <p>17 modules</p>
+                <p class="card_price">CAD$635</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <a class="close-modal">
+                <i class="material-icons">close</i>
+            </a>
+
+            <div class="modal-content">
+                <!-- video here-->
+                <iframe src=""  frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="scripts.js"></script>
+
+{% endblock %}

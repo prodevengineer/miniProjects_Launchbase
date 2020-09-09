@@ -1,0 +1,70 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title> About Us | Rocketseat </title>
+{% endblock %}
+
+{% block link %}
+    <a href="/courses" target="_blank">COURSES</a>
+{% endblock %}
+
+{% block content %}
+
+    <div id="content">
+        <img class="img" src="https://pbs.twimg.com/profile_images/1291682473592659968/sEorc6oh_400x400.jpg" alt="Rocketseat Logo">
+        
+        <div class="technologies">
+             <h1><a href="https://rocketseat.com.br/" target="_blank">Rocketseat</a></h1>
+            <h3>E-learning platform in technology</h3>
+
+            <div class="grid">
+
+                <div class="tech" id="javas">
+                    <div class="tech-image">
+                        <img src="https://xesque.rocketseat.dev/platform/tech/javascript.svg" alt="Javascript"> 
+                    </div>
+                    <div class="tech-title">
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+
+                <div class="tech" id="nodejs">
+                    <div class="tech-image">
+                        <img src="https://xesque.rocketseat.dev/platform/tech/node.svg" alt="Node JS"> 
+                    </div>
+                    <div class="tech-title">
+                        <p>NodeJS</p>
+                    </div>
+                </div>
+
+                <div class="tech" id="reactjs">
+                    <div class="tech-image">
+                        <img src="https://xesque.rocketseat.dev/platform/tech/reactjs.svg" alt="React JS"> 
+                    </div>
+                    <div class="tech-title">
+                        <p>ReactJS</p>
+                    </div>
+                </div>
+
+                <div class="tech" id="reactnat">
+                    <div class="tech-image">
+                        <img src="https://xesque.rocketseat.dev/platform/tech/react-native.svg" alt="React Native"> 
+                    </div>
+                    <div class="tech-title">
+                        <p>React Native</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       
+    </div>
+    
+    <footer id="links-footer">
+        <a href="https://github.com/Rocketseat" class="hover" id="gh" target="_blank"><img src="https://www.emmagilhuly.com/assets/img/github.png" alt="Github"> </a>
+        <a href="https://www.instagram.com/rocketseat_oficial/?hl=en" class="hover" id="ig" target="_blank"><img src="https://cdn2.iconfinder.com/data/icons/social-icons-grey/512/INSTAGRAM-512.png" alt="Instagram"> </a>
+        <a href="https://www.facebook.com/rocketseat/" class="hover" id="fb" target="_blank"> <img src="https://www.cfdiocese.org/wp-content/uploads/2015/04/facebook-icon-grey.png" alt="Facebook"></a>
+
+    </footer>
+
+{% endblock %}
