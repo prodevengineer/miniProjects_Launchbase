@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+
+:root{
+    --color-purple: #7159c1;
+    --color-green: #04d361;
+    --color-whitish: #e1e1e6;
+    --color-grey: rgb(135, 134, 139);
+    --color-p-alpha: rgb(130, 87, 229);
+    --color-o-alpha: rgb(253, 149, 31);
+    --color-g-alpha: rgb(4, 211, 97);
+}
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+
+body{
+    background: #0d0d0f;
+    font-family: 'Roboto', sans-serif;
+    /* background: linear-gradient(180deg, rgba(2,0,36,1) 1%, rgba(9,9,31,1) 51%, rgba(41,39,108,1) 65%, rgba(130,87,230,1) 93%, rgba(41,39,108,1) 100%); */
+}
+
+header{
+    background: #202024;
+    opacity: 0.95;
+    margin: 0px;
+    padding:30px;
+}
+
+.links{
+    text-align: center;
+}
+
+.links a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #e1e1e6;
+    background: var(--color-purple);
+    padding: 10px 20px;
+    font-size: 10px;
+    line-height: 20px;
+    font-weight: 900;
+    border-bottom: 2px solid #a8a8b3;
+    margin-left:30px;
+    border-radius: 5px;
+
+}
+
+.links a:hover{
+    
+    color: var(--color-green);
+    background:#323238;
+    transition: 150ms;
+
+}
+
+#content{
+    text-align:center;
+    color: var(--color-whitish);
+    font-family: 'Roboto', sans-serif;
+}
+
+#content .img{
+    border: 5px solid var(--color-purple);
+    border-radius: 50%;
+    height:250px;
+    margin: 32px 0;
+}
+
+.technologies{
+    background:#323238;
+    height:350px;
+    width:400px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 6px solid #41414d;
+    border-bottom: 6px solid #a8a8b3;
+    
+}
+
+#content h1{
+    color: var(--color-whitish);
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+    border-bottom: 1px solid #41414d;
+    padding: 5px 0;
+    
+}
+#content h1 a{
+    text-decoration: none;
+    color: var(--color-whitish);
+}
+#content h1 a:hover{
+    color:var(--color-green);
+    transition: color 100ms;
+}
+
+#content h3{
+    font-size:  20px; 
+    line-height: 35px;
+    margin-top:  5px;
+    color: var(--color-purple);;
+    font-weight: bold;
+    ;
+}
+#content .grid{
+    margin: 20px auto;
+}
+
+
+.grid .tech {
+    display:grid;
+    grid-template-columns: 30px 120px;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.grid .tech .img{
+    height: 15px;
+    margin: 20px auto;
+}
+
+.grid .tech .tech-title p{
+    font:bolder 20px Roboto, sans-serif;
+    line-height: 30px;
+}
+
+#links-footer{
+    display: grid;
+    grid-template-columns: repeat(3,40px);
+    grid-gap: 20px;
+    justify-content: center;
+    padding: 10px 20px;
+    margin-top: 50px;
+}
+
+.hover img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .05s ease-in-out;
+	transition: .05s ease-in-out;
+}
+.hover img:hover  {
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+#gh img{
+    height:32px;
+    width:32px;
+}
+
+#ig img{
+    height:30px;
+    width:30px;
+}
+
+#fb img{
+    height:30px;
+    width:30px;
+    border-radius: 10px;
+}
+
+
+/* COURSES */
+#courses{
+    text-align: center;
+    color: var(--color-whitish);
+    margin:40px auto;
+}
+.cards{
+    margin: 25px 25px;
+
+    max-width: 100%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    grid-gap:20px;
+}
+
+.card{
+    background: #202024;
+    min-height:500px;
+    display:grid;
+    grid-template-rows: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#starter:hover{
+    border: 3px solid var(--color-p-alpha);
+    transform: translateY(-7px);
+}
+
+#launchbase:hover{
+    border: 3px solid var(--color-o-alpha);
+    transform: translateY(-7px);
+}
+
+#gostack:hover{
+    border: 3px solid var(--color-g-alpha);
+    transform: translateY(-7px);
+}
+
+
+.card .card_image-container,
+.card .card_image-container,
+.card .card_image-container{
+    /* grid-column: 1/3; */
+    text-align: center;
+    height:120px;
+}
+
+.card_image-container img{
+    margin-top: 50px;
+}
+
+.card .card_title p{
+   /* grid-column: 1/3; */
+    color: var(--color-grey);
+    font:bold 1rem Roboto, sans-serif;
+    margin-top:90px;
+    text-align: center;
+    
+}
+
+
+.card_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+
+
+.card_info p,
+.card_info p card_price{
+    background:#41414d;
+    border-radius: 10px;
+    color: var(--color-grey);
+    font:bold 1rem Roboto, sans-serif;
+    padding:10px 15px;
+}
+
+#starter strong{
+    color:var(--color-p-alpha);
+}
+
+#launchbase strong{
+    color: var(--color-o-alpha);
+}
+
+#gostack strong{
+    color: var(--color-g-alpha);
+}
+
+
+ /* === MODAL ==== */
+ .modal-overlay{
+     background-color: rgba(0,0,0, 0.7);
+     width: 100%;
+     height:100%;
+     position: fixed;  /*ficara fixado na minha tela, no bottom*/
+     top:0; /*traz o modal para cima e deixa o modal fixado no topo*/
+     opacity: 0; /* some com o modal, mas ainda deixa cursor pointer do close button evidente*/
+     visibility: hidden; /*some com o close button*/
+ }
+
+ .modal{
+     background-color: white;
+     width: 90%;
+     height:90%;
+     margin: 5vh auto; /*para alinhar a tela branca com a preta. vh:visao da altura*/
+     position: relative ;
+ }
+
+ .modal.maximize{
+     width: 100%;
+     height: 100%;
+ }
+
+ .modal .close-modal{
+     color: black;
+     position: absolute; /*posicionamento absoluto na tela toda. em qualquer lugar da tela eu posso posiciona-lo. permite o uso ddo top, left, right and bottom */
+     right:8px; /* o icone eh jogado para a direita, na regiao da tela preta */
+     top:8px;
+     cursor: pointer;
+    }
+
+/* === MODAL .ACTIVE === *//*quando clicado, add classe active*/
+.modal-overlay.active{
+    opacity: 1; /*tela do modal aparece*/
+    visibility: visible;
+}
+
+iframe{
+    width: 100%;
+    height:90%; /*90% pq eu preciso que meu close button conitnue aparecendo*/
+    top:5%;  /*tira a barra branca deixada pelo absolute no bototm*/
+    position: absolute;
+}
+
+.error{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.error img{
+    height: 300px;
+    width: 500px;
+    border-radius: 30px;
+}
+
+.error h1{
+    color: var(--color-green);
+    font: bold 5rem Roboto, sans-serif;
+}
+
+.error h2{
+    color: var(--color-whitish);
+    font: bold 3rem Roboto, sans-serif;
+}
+
+.error p{
+    margin-top: 10px;
+    color: var(--color-whitish);
+    font: bold 1rem Roboto, sans-serif;
+    text-align: center;
+}
