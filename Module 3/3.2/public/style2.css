@@ -224,7 +224,6 @@ header{
 }
 
 .card .card_title p{
-   /* grid-column: 1/3; */
     color: var(--color-grey);
     font:bold 1rem Roboto, sans-serif;
     margin-top:90px;
