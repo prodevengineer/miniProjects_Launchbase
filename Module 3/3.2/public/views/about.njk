@@ -1,0 +1,44 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title> About Us | Rocketseat </title>
+{% endblock %}
+
+{% block link %}
+    <a href="/courses" target="_blank">COURSES</a>
+{% endblock %}
+
+{% block content %}
+
+    <div id="content">
+        <img class="img" src="{{about.avatar_url}}" alt="Image of {{about.company}}">
+        
+        <div class="technologies">
+             <h1><a href="{{about.company_url}}" target="_blank">{{about.company}}</a></h1>
+            <h3>{{about.intro}}</h3>
+
+            <div class="grid">
+                {% for technology in about.technologies %}
+                <div class="tech">
+                    <div class="tech-image">
+                        <img src="{{technology.avatar_tech}}" alt="Image of {{technology.name}}"> 
+                    </div>
+                    <div class="tech-title">
+                        <p>{{technology.name}}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        
+       
+    </div>
+    
+    <footer id="links-footer">
+        <a href="https://github.com/Rocketseat" class="hover" id="gh" target="_blank"><img src="https://www.emmagilhuly.com/assets/img/github.png" alt="Github"> </a>
+        <a href="https://www.instagram.com/rocketseat_oficial/?hl=en" class="hover" id="ig" target="_blank"><img src="https://cdn2.iconfinder.com/data/icons/social-icons-grey/512/INSTAGRAM-512.png" alt="Instagram"> </a>
+        <a href="https://www.facebook.com/rocketseat/" class="hover" id="fb" target="_blank"> <img src="https://www.cfdiocese.org/wp-content/uploads/2015/04/facebook-icon-grey.png" alt="Facebook"></a>
+
+    </footer>
+
+{% endblock %}
